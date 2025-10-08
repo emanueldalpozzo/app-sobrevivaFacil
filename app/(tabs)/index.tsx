@@ -1,5 +1,3 @@
-// app/(tabs)/index.tsx
-
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { useRouter } from 'expo-router';
@@ -45,7 +43,7 @@ export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>Meu Lar</Text>
+        <Text style={styles.headerTitle}>Sobreviva Fácil</Text>
         <TouchableOpacity onPress={handleOpenSettings}>
           <Ionicons name="settings-outline" size={24} color={Colors.light.icon} />
         </TouchableOpacity>
@@ -54,7 +52,7 @@ export default function HomeScreen() {
       <View style={styles.content}>
         <Text style={styles.title}>Bem-vindo(a) ao seu novo lar!</Text>
         <Text style={styles.subtitle}>
-          Prepare-se para uma jornada emocionante de independência e aprendizado. Aqui, você encontrará tudo o que precisa para transformar sua casa em um lar.
+          Prepare-se para uma jornada de independência e aprendizado. Aqui, você encontrará um guia de 'sobrevivência' e tudo o que precisa para transformar sua casa em um lar sem passar sufoco.
         </Text>
 
         <TouchableOpacity style={styles.buttonPrimary} onPress={() => router.push('/rotina')}>

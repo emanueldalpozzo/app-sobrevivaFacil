@@ -1,5 +1,3 @@
-// app/(tabs)/dicas.tsx
-
 import React, { useEffect, useRef } from 'react';
 import { View, Text, StyleSheet, SectionList } from 'react-native';
 import { Stack, useLocalSearchParams } from 'expo-router';
@@ -25,7 +23,7 @@ export default function DicasScreen() {
             animated: true,
             viewOffset: 20
           });
-        }, 300); // Pequeno delay para garantir que a lista renderizou
+        }, 300); 
       }
     }
   }, [params.highlightedCategory]);
@@ -96,7 +94,7 @@ const styles = StyleSheet.create({
   itemText: {
     fontSize: 16,
     color: Colors.light.text,
-    flex: 1, // Garante que o texto quebre a linha se for muito grande
+    flex: 1, 
   },
   separator: {
     height: 8,

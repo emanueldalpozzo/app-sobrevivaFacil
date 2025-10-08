@@ -1,5 +1,3 @@
-// components/TarefaItem.tsx
-
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
@@ -52,7 +50,7 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   containerCompleted: {
-    backgroundColor: '#F0F8FF', // Um azul bem clarinho pra indicar sucesso
+    backgroundColor: '#F0F8FF', 
   },
   iconContainer: {
     backgroundColor: Colors.light.secondary,

@@ -1,5 +1,3 @@
-// app/(tabs)/rotina.tsx
-
 import React from 'react';
 import { View, StyleSheet, FlatList } from 'react-native';
 import { Stack } from 'expo-router';

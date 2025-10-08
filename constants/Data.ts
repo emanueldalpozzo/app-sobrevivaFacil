@@ -1,4 +1,4 @@
-// Para a FlatList da tela de Rotina
+
 export const tarefasDomesticas = [
     { id: '1', icon: '🛌', title: 'Trocar lençóis', frequency: 'A cada 7 dias' },
     { id: '2', icon: '🛁', title: 'Lavar toalhas', frequency: 'A cada 3 dias' },
@@ -10,7 +10,7 @@ export const tarefasDomesticas = [
     { id: '8', icon: '🪟', title: 'Limpar janelas', frequency: 'Mensalmente' },
   ];
   
-  // Para a SectionList da tela de Dicas
+ 
   export const dicasEssenciais = [
     {
       title: 'Economia',

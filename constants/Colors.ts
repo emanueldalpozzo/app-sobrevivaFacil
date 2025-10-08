@@ -1,21 +1,18 @@
-// constants/Colors.ts
-
-const tintColorLight = '#007BFF'; // Azul primário
+const tintColorLight = '#007BFF'; 
 
 export default {
   light: {
     text: '#11181C',
-    background: '#f8f9fa', // Um cinza bem claro
+    background: '#f8f9fa', 
     tint: tintColorLight,
     icon: '#687076',
     tabIconDefault: '#687076',
     tabIconSelected: tintColorLight,
     primary: tintColorLight,
-    secondary: '#E0F2FE', // Azul claro para botões secundários
+    secondary: '#E0F2FE', 
     card: '#FFFFFF',
-    separator: '#F0F0F0', // Cor do separador de listas
+    separator: '#F0F0F0', 
   },
-  // O tema dark pode ser definido aqui no futuro
   dark: {
     text: '#ECEDEE',
     background: '#151718',
