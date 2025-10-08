@@ -1,9 +1,10 @@
 // app/(tabs)/dicas.tsx
 
 import React, { useEffect, useRef } from 'react';
-import { View, Text, StyleSheet, SafeAreaView, SectionList } from 'react-native';
+import { View, Text, StyleSheet, SectionList } from 'react-native';
 import { Stack, useLocalSearchParams } from 'expo-router';
 import { dicasEssenciais } from '@/constants/Data';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import Colors from '@/constants/Colors';
 
 export default function DicasScreen() {

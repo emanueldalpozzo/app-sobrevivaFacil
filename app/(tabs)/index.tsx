@@ -1,10 +1,11 @@
 // app/(tabs)/index.tsx
 
 import React from 'react';
-import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { useRouter } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { useActionSheet } from '@expo/react-native-action-sheet';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import Colors from '@/constants/Colors';
 
 export default function HomeScreen() {
@@ -56,7 +57,7 @@ export default function HomeScreen() {
           Prepare-se para uma jornada emocionante de independência e aprendizado. Aqui, você encontrará tudo o que precisa para transformar sua casa em um lar.
         </Text>
 
-        <TouchableOpacity style={styles.buttonPrimary} onPress={() => router.push('/(tabs)/rotina')}>
+        <TouchableOpacity style={styles.buttonPrimary} onPress={() => router.push('/rotina')}>
           <Text style={styles.buttonTextPrimary}>Rotina</Text>
         </TouchableOpacity>
         
@@ -89,7 +90,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     paddingHorizontal: 20,
-    paddingBottom: 50, // Espaço para não colar na tab bar
+    paddingBottom: 50, 
   },
   title: {
     fontSize: 32,

@@ -1,11 +1,12 @@
 // app/(tabs)/rotina.tsx
 
 import React from 'react';
-import { View, StyleSheet, SafeAreaView, FlatList } from 'react-native';
+import { View, StyleSheet, FlatList } from 'react-native';
 import { Stack } from 'expo-router';
 import TarefaItem from '@/components/TarefaItem';
 import { tarefasDomesticas } from '@/constants/Data';
 import Colors from '@/constants/Colors';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function RotinaScreen() {
   return (
