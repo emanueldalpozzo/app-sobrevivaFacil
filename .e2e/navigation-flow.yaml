@@ -1,7 +1,6 @@
 appId: host.exp.exponent
 ---
 
-
 - assertVisible: "Rotina"
 - tapOn: "Rotina"
 - assertVisible: "Tarefas Domésticas"
@@ -9,5 +8,6 @@ appId: host.exp.exponent
 - tapOn: "Dicas"
 - assertVisible: "Dicas"
 
-- tapOn: "Financeiro"
-- assertVisible: "Financeiro"
+- tapOn: "Home"
+- assertVisible: "Sobreviva Fácil"
+

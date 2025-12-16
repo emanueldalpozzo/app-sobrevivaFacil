@@ -5,7 +5,12 @@ appId: host.exp.exponent
 - tapOn: "Rotina"
 - assertVisible: "Tarefas Domésticas"
 
-- tapOn: "Limpar a casa"
+- tapOn: "Limpar banheiro"
 - assertVisible:
-    text: "Limpar a casa"
-    
+    text: "Limpar banheiro"
+
+- tapOn: "Home"
+
+- tapOn: "Rotina"
+- assertVisible:
+    text: "Limpar banheiro"   

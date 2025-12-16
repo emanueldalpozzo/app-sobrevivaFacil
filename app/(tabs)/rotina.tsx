@@ -27,6 +27,7 @@ export default function RotinaScreen() {
       <FlatList
         data={tarefas}
         keyExtractor={(item) => item.id}
+        testID="lista-tarefas"
         renderItem={({ item }) => (
           <TarefaItem
             icon={item.icon}

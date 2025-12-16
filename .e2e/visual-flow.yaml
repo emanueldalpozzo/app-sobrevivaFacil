@@ -2,9 +2,9 @@ appId: host.exp.exponent
 ---
 
 
-- tapOn: "Rotina"
+- tapOn: "Dicas"
+- assertVisible: "Dicas Essenciais"
 
-- tapOn: "Fazer compras"
-- tapOn: "Rotina"
+- scroll
 
-- assertVisible: "Fazer compras"
+- assertVisible: "Cozinha"
