@@ -18,6 +18,25 @@ Este projeto foi desenvolvido como parte da Avaliação 1 da disciplina de Progr
 ### Dicas
 ![alt text](/prints/dicas.png)
 
+## Diferenças entre teste unitário e End to End (e2e)
+Ambos os testes servem para garantir a qualidade do software por meio de testes automatizados, porém com propósitos diferentes:
+
+### Teste unitário 
+O teste unitário tem como objetivo validar pequenas funcionalidades do códigos(unidaddes), como componentes e funções. A verificação é feita de forma independente, ou seja, somente aquela unidade será testada sem depender de outras partes do código. Nesta aplicação é usado o framework Jest
+ #### Características:
+   - Não dependem de emulador, diferente do e2e.
+   - Testa somente unidades do código
+   - Facilitam a identificação de erros pontuais.
+   - Tem um feedback rápido
+
+ ### Teste End-to-End (2e2)
+ O teste e2e tentam simular a interação real do usuário com a aplicação, simulando a jornada completa do usuário. Garante que os componentes funcionem em conjunto e não unitáriamente. Nesta aplicação foi utilizado o framework Maestro
+  #### Características:
+  - Testam o fluxo completo da aplicação
+  - Simula ações do usuário com a tela (clique, scroll...)
+  - São mais lentos comparados aos testes unitários.
+  - Necessitam de um device (um celular conectado via usb ou um emulador)
+
 
 ## 🚀 Como Executar o Projeto
 
