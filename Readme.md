@@ -37,6 +37,40 @@ O teste unitário tem como objetivo validar pequenas funcionalidades do códigos
   - São mais lentos comparados aos testes unitários.
   - Necessitam de um device (um celular conectado via usb ou um emulador)
 
+## Instalação das dependências de teste e comandos para rodar
+```bash
+ ## 1. Instalar o jest-expo
+npx expo install jest-expo jest @types/jest --dev
+
+### Modificar o package.json:
+{
+  "scripts": {
+    "test": "jest --watchAll"
+    ...
+{
+  "jest": {
+    "preset": "jest-expo"
+  }
+}
+
+### Para executar:
+npm test
+
+
+2. Instalar o Maestro
+(Primeiro deve verificar se o java 17 ou mais atual esteja instalado na máquina)
+
+curl -fsSL "https://get.maestro.mobile.dev" | bash
+
+Para executar:
+ - npx expo start
+ - Escolher a opção Android
+ - Executar o comando em outro terminal dentro da pasta raíz do projeto: maestro test .e2e 
+
+
+
+```
+
 
 ## 🚀 Como Executar o Projeto
 
