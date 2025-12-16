@@ -1,0 +1,10 @@
+appId: host.exp.exponent
+---
+
+
+- tapOn: "Rotina"
+
+- tapOn: "Fazer compras"
+- tapOn: "Rotina"
+
+- assertVisible: "Fazer compras"

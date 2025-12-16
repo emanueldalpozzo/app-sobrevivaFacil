@@ -1,0 +1,13 @@
+appId: host.exp.exponent
+---
+
+
+- assertVisible: "Rotina"
+- tapOn: "Rotina"
+- assertVisible: "Tarefas Domésticas"
+
+- tapOn: "Dicas"
+- assertVisible: "Dicas"
+
+- tapOn: "Financeiro"
+- assertVisible: "Financeiro"

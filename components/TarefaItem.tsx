@@ -7,13 +7,16 @@ type TarefaItemProps = {
   icon: string;
   title: string;
   frequency: string;
+  onPress?: () => void;
+
 };
 
-export default function TarefaItem({ icon, title, frequency }: TarefaItemProps) {
+export default function TarefaItem({ icon, title, frequency, onPress }: TarefaItemProps) {
   const [isCompleted, setIsCompleted] = useState(false);
 
   const toggleCompletion = () => {
     setIsCompleted(!isCompleted);
+    onPress?.();
   };
 
   return (
@@ -41,12 +44,11 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.light.card,
     padding: 16,
     borderRadius: 12,
-    // Sombra para iOS
+    
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.05,
     shadowRadius: 2,
-    // Sombra para Android
     elevation: 2,
   },
   containerCompleted: {
